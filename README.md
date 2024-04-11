@@ -1,0 +1,2 @@
+# appPousadaLaravel10-ex
+ 

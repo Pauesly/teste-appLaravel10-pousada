@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
- 
-    <link href="{{ asset('view/css/app.css') }}" ></script>
-    
+  
 
-
-     <!--
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
--->
-
+<!--    
     <style>
-      body {background-color: rgb(240, 251, 253);}
-
-      .fc-event-start {
-        margin-left: 7vw !important;
-      }
-      .fc-event-end {
-        margin-right: 7vw !important;
-      }
-
+      th:first-child, td:first-child
+        {
+          position:sticky;
+          left:0px;
+        }
     </style>
+  -->
 
+  <style>
+    .cell-with-button {
+      position: relative;
+      text-align: center; /* Alinha o botão ao centro */
+    }
+
+    .btn-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      
+      
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 100%; /* Largura de 70% da célula */
+      white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+    }
+  </style>
+
+ 
 </head>
 <body>
 
@@ -105,9 +115,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 
-    <script src="{{ asset('view/js/index.global.min.js') }}" ></script>
-    <script src="{{ asset('view/js/core/locales-all.global.min.js') }}" ></script>
-    <script src="{{ asset('view/js/custom.js') }}" ></script>
  
 </body>
 </html>

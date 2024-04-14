@@ -89,7 +89,9 @@ Route::post('/auth', [LoginController::class, 'auth'])->name('login.auth');
 
 
 
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard')->middleware('auth');
+Route::get('/admin/dashboard',  [DashboardController::class, 'index'])->name('admin.dashboard')->middleware('auth');
+Route::get('/admin/calendario', [DashboardController::class, 'calendario'])->name('admin.calendario')->middleware('auth');
+Route::get('/admin/timeline',   [DashboardController::class, 'timeline'])->name('admin.timeline')->middleware('auth');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
 

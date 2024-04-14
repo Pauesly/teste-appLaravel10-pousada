@@ -6,7 +6,7 @@
 
 @section('conteudo')
     <div class="row container">
-        <h1>Ola {{ auth()->user()->firstName }} </h1>
+        <h1>Ola calendario </h1>
 
 
 

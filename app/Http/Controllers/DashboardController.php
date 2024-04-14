@@ -17,4 +17,13 @@ class DashboardController extends Controller
     public function index(){
         return view('admin.dashboard');
     }
+
+    public function calendario(){
+        return view('admin.calendario');
+    }
+
+    public function timeline(){
+        return view('admin.timeline');
+    }
+
 }
